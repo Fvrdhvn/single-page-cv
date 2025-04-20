@@ -1,0 +1,42 @@
+* {
+  font-family: poppins, sans-serif;
+  margin-left: 5px;
+}
+
+hr {
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin-top: 20px;
+}
+
+#position {
+    margin-top: auto;
+}
+
+#position, #head {
+  color: rgb(18, 177, 18);
+}
+
+#ident-info, #edu-info, #exp-info {
+    margin: auto;
+    padding-left: 4px;
+}
+
+.my-education, .my-exp {
+    padding-top: 15px;
+}
+
+.main-place {
+    color: rgb(10, 111, 188)
+}
+
+ul {
+    padding-top: 10px;
+}
+
+li {
+    margin-left: 20px;
+    line-height: 1.6;
+    list-style:disc;
+}
