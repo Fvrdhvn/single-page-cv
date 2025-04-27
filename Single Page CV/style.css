@@ -1,6 +1,17 @@
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
   font-family: poppins, sans-serif;
-  margin-left: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 hr {
@@ -11,24 +22,33 @@ hr {
 }
 
 #position {
-    margin-top: auto;
+    margin-top: 10px;
 }
 
-#position, #head {
+#position  {
   color: rgb(18, 177, 18);
 }
 
-#ident-info, #edu-info, #exp-info {
-    margin: auto;
-    padding-left: 4px;
+.heading {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: rgb(18, 177, 18);
+    
 }
 
+.ident-info, .edu-info, .exp-info, .skills-info {
+    margin: auto;
+    padding-left: 4px;
+  }  
+
 .my-education, .my-exp {
+    margin: auto;
     padding-top: 15px;
 }
 
 .main-place {
-    color: rgb(10, 111, 188)
+    color: rgb(10, 111, 188);
+    font-weight: bold;
 }
 
 ul {
@@ -40,3 +60,53 @@ li {
     line-height: 1.6;
     list-style:disc;
 }
+
+ul.edu-info li {
+  margin-bottom: 10px; /* Memberikan jarak antar list item */
+  line-height: 1.5; /* Menjaga jarak baris supaya lebih rapi */
+}
+
+/* Styling untuk ul dan li dalam exp-info */
+ul.exp-info {
+  padding-top: 10px;
+  margin-left: 0;
+}
+
+ul.exp-info li {
+  margin-left: 20px;
+  line-height: 1.6;
+  list-style: disc;
+  margin-bottom: 10px;  /* Menambahkan jarak antar item */
+}
+
+/* Optional: Menambahkan penataan untuk .exp-info jika perlu */
+.exp-info {
+  margin: auto;
+  padding-left: 4px;
+}
+
+.contact {
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+  
+  .contact .heading {
+    font-size: 1.5rem;
+    color: rgb(18, 177, 18);  /* Sesuaikan dengan skema warna */
+  }
+  
+  .contact p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-link {
+    text-decoration: none;  /* Menghapus garis bawah pada link */
+    color: rgb(10, 111, 188);  /* Warna biru atau sesuaikan dengan desain */
+    margin: 0 10px;  /* Memberikan jarak antar link */
+  }
+  
+  .contact-link:hover {
+    color: rgb(0, 78, 155);  /* Warna berubah saat hover untuk interaktivitas */
+  }
+  
