@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -11,7 +12,7 @@
       content="HTML, projects, web development, code learning"
     />
     <meta name="author" content="Farr" />
-    <title>Single Page CV</title>
+    <title>Farr - Web Developer | Single Page CV</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -36,25 +37,32 @@
       <div class="identity">
         <h1>Kabuki Nao</h1>
         <p id="position">Full Stack Developer</p>
-        <p id="ident-info">Somewhere Street 404</p>
-        <p id="ident-info">Jakarta City, Indonesia</p>
-        <p id="ident-info">+62 812-3456-7890</p>
-        <p id="ident-info">example@gmail.com</p>
+        <p class="ident-info">Somewhere Street 404</p>
+        <p class="ident-info">Jakarta City, Indonesia</p>
+        <p class="ident-info">+62 812-3456-7890</p>
+        <p class="ident-info">example@gmail.com</p>
       </div>
 
       <div class="my-skills">
-        <p id="head">Skills</p>
-        <p>HTML,CSS,JavaScript,Accessibility,UI/UX,Responsive Web Design</p>
+        <p class="heading">Skills</p>
+        <ul class="skills-info">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Accessibility</li>
+          <li>UI/UX</li>
+          <li>Responsive Web Design</li>
+        </ul>
       </div>
 
       <div class="my-education">
-        <p id="head">Education</p>
-        <p class="main-place" id="edu-info">
+        <p class="heading">Education</p>
+        <p class="main-place edu-info">
           University of California, Berkeley - Bachelor of Science in Computer
           Science
         </p>
-        <p id="edu-info">July 2017 to May 2020</p>
-        <ul id="edu-info">
+        <p class="edu-info">July 2017 to May 2020</p>
+        <ul class="edu-info">
           <li>
             Created an innovative web development tool using artificial
             intelligence, which helped automate some repetitive coding tasks,
@@ -76,12 +84,12 @@
       </div>
 
       <div class="my-exp">
-        <p id="head">Experience</p>
-        <p class="main-place" id="exp-info">
+        <p class="heading">Experience</p>
+        <p class="main-place exp-info">
           PT Teknologi Digital Nusantara - Frontend Developer
         </p>
-        <p id="exp-info">July 2020 to Dec 2021</p>
-        <ul id="exp-info">
+        <p class="exp-info">July 2020 to Dec 2021</p>
+        <ul class="exp-info">
           <li>
             Led the redesign of the company’s landing page, increasing
             conversion rate by 25%
@@ -100,9 +108,9 @@
           Git & GitHub
         </p>
         <br />
-        <p class="main-place" id="exp-info">PT Solusi Digital Global</p>
-        <p id="exp-info">Jan 2022 to Dec 2024</p>
-        <ul id="exp-info">
+        <p class="main-place" class="exp-info">PT Solusi Digital Global</p>
+        <p class="exp-info">Jan 2022 to Dec 2024</p>
+        <ul class="exp-info">
           <li>
             Led a team of 5 frontend developers in building a scalable design
             system
@@ -123,15 +131,21 @@
       </div>
 
       <div class="contact">
-        <p id="head">Across the Internet</p>
+        <p class="heading">Across the Internet</p>
         <p>Connect with me:</p>
         <a
           href="https://www.linkedin.com/in/muhammad-zaid-fardhan-8558bb2a2/"
           target="_blank"
+          class="contact-link"
           >LinkedIn</a
         >
         |
-        <a href="https://github.com/Fvrdhvn" target="_blank">GitHub</a>
+        <a
+          href="https://github.com/Fvrdhvn"
+          target="_blank"
+          class="contact-link"
+          >GitHub</a
+        >
       </div>
     </div>
   </body>
